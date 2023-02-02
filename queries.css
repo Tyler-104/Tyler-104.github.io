@@ -1,0 +1,145 @@
+@media (max-width: 1215px) {
+  .header {
+    padding: 25px;
+    position: absolute;
+  }
+  .links {
+    position: absolute;
+    transform: initial;
+    right: initial;
+    top: 32px;
+    left: 82px;
+    display: flex;
+    animation-name: fade-down;
+  }
+
+  .link-item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-intro {
+    padding: 100px;
+  }
+
+  .work {
+    margin-top: 35px;
+  }
+
+  .main {
+    margin-bottom: 35px;
+  }
+
+  .filters {
+  }
+
+  .footer {
+    border: initial;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 825px) {
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+  }
+
+  .project:nth-child(1) {
+    grid-row: 1 / 2;
+  }
+
+  .project:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .project:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .project:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .project:nth-child(6) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    padding: 15px;
+  }
+
+  .btn--contact {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+
+  .links {
+    top: 22px;
+    left: 70px;
+  }
+
+  .first-heading {
+    font-size: 42px;
+  }
+
+  .text {
+    font-size: 30px;
+  }
+
+  .main {
+    padding: 0 15px;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    --default-opacity: 0.4;
+    --hover-opacity: 0.3;
+  }
+
+  .text--second {
+    display: inline;
+  }
+
+  .top {
+    margin-bottom: 20px;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 250px);
+  }
+
+  .section-grid .project {
+    grid-column: initial;
+    grid-row: initial;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+
+  .email {
+    font-size: 11px;
+  }
+}

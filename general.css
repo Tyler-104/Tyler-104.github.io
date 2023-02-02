@@ -1,0 +1,124 @@
+/*
+--- 01 FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+               
+-Font weights
+
+-Line heights
+1.1:
+
+- Letter spacing
+0.5:
+
+*/
+
+/*
+- SPACING SYSTEM (px)
+   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+   */
+/*
+   --- COLORS
+USE ONE OF THESE FOR THE BACKGROUND DECIDE WHEN ALL CONTECT IS DONE
+   - Primary: #1B1212
+   - Tints: #322a2a
+   - Shades: #181010 #130d0d
+
+   Text color:#fff;
+   tints: #fae5d3
+*/
+
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --default-opacity: 0.2;
+  --hover-opacity: 0.1;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  background-color: #1b1212;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font: inherit;
+}
+
+/* KEYFRAMES SETTINGS GENERAL (not applied) */
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) translateY(-50%) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX() translateY(-50%) scale(1);
+  }
+}
+
+/* UTILTIES */
+
+.u-bold {
+  font-weight: 500;
+}
+
+.u-bolder {
+  font-weight: 700;
+}
+
+.u-yellow {
+  color: #fae5d3;
+}
